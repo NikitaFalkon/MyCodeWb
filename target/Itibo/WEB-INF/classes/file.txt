@@ -1,0 +1,5 @@
+FirstString
+jdbc:mysql://localhost:3307/zoo?allowPublicKeyRetrieval=true&serverTimezone=Europe/Minsk&useSSL=false
+root
+root
+PetsWb

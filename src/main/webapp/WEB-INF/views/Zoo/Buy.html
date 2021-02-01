@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+<table
+        border="1"
+        background="images/168.png"
+        bgcolor="#ffbc54"
+        opacity="0.7";
+        cellpadding="10"
+        style="width:100%;  border-top-left-radius:5px; border-top-right-radius:5px">
+
+    <tr>
+        <th>
+            <h1>MiniWeb</h1>
+            <h3>Some text</h3>
+        </th>
+    </tr>
+</table>
+<table
+        border="1"
+        bgcolor="#fad9b3"
+        cellpadding="10"
+        style="width:100%;">
+    <tr>
+        <td
+                rowspan="2"
+                style="width:80%">
+            <form th:metod="POST" th:action="@{/Zoo/Ready}" th:object="${anim}">
+                <label for="name">Enter name</label>
+                <input type="text" th:field="*{name}" id="name"/>
+                <br/>
+                <label for="cost">Enter cost</label>
+                <input type="text" th:field="*{cost}" id="cost"/>
+                <br/>
+                <br/>
+                <input type="submit" value="Create!"/>
+            </form>
+            <br/>
+        </td>
+
+        <td bgcolor="#fad9b3">
+            <h3>Menu</h3>
+            <p>
+                <a href="/Zoo/Sell">
+                    <!--<img src="http://trueimages.ru/img/00/06/f4fffdb5.png">-->
+                    <span style="margin-left:5px;">Sell</span></a>
+            </p>
+            <p>
+                <a href="/Zoo/Zoo">
+                    <!--<img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg">-->
+                    <span style="margin-left:5px;">Animals</span></a>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td
+                bgcolor="#fad9b3"
+                align="center">
+            <h3>Information</h3>
+            <p>Some zooshop</p>
+        </td>
+    </tr>
+</table>
+<table
+        border="1"
+        bgcolor="#ffbc54"
+        height=100px
+        cellpadding="10"
+        style="width:100%; border-bottom-left-radius:5px; border-bottom-right-radius:5px">
+    <tr>
+        <th>
+            <h3>Hello</h3>
+        </th>
+    </tr>
+</table>
+<body>
